@@ -4,9 +4,29 @@ $(document).ready(function () {
         margin: 100,
         nav: true,
         touchDrag: true,
-        nav: false,
+        nav: true,
         dots: true,
-        autoplay: false, //true
+        autoplay: false,
+        autoplayTimeout: 3000,
+        autoplayHoverPause: true,
+        smartSpeed: 800,
+        responsive: {
+            0: {
+                items: 1
+            }
+        }
+    });
+});
+
+$(document).ready(function () {
+    const slider = $("#actions_slider").owlCarousel({
+        loop: true,
+        margin: 100,
+        nav: true,
+        touchDrag: true,
+        nav: true,
+        dots: true,
+        autoplay: false,
         autoplayTimeout: 3000,
         autoplayHoverPause: true,
         smartSpeed: 800,

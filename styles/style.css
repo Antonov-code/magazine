@@ -173,8 +173,147 @@ a:hover {
 
 
 /* SLIDER */
+.main_slider_item {
+    width: 100%;
+    height: 600px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: end;
+}
 
+.main_slider_item_right {
+    width: 405px;
+    height: 100%;
+    background-color: #FFFFFFBF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main_slider_item_right_title {
+    color: Grey;
+    font-size: 30px;
+    font-weight: 700;
+    width: 290px;
+    line-height: 45px;
+}
+
+.main_slider_item_right_title>b {
+    display: block;
+    font-size: 45px;
+    color: #6CDB7E;
+    font-weight: 700;
+}
+
+.main_slider_item_right_title_button {
+    margin-top: 32px;
+    display: flex;
+    align-items: center;
+}
+
+.main_slider_item_right_title_button-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #4798DE;
+    border-radius: 3px;
+    color: #fff;
+    font-weight: 700;
+    height: 40px;
+    padding: 0 30px 0 30px;
+    cursor: pointer;
+}
+
+.main_slider>.owl-carousel>.owl-nav {
+    position: relative;
+    bottom: 310px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.owl-theme .owl-nav {
+    margin-top: 0;
+}
+
+.owl-prev, .owl-next {
+    background-color: #F1F2F64D !important;
+    margin: 0 !important;
+    height: 45px;
+    width: 45px;
+}
+
+.owl-prev>span, .owl-next>span {
+    display: none;
+}
+
+.owl-prev::before, .owl-next::before {
+    width: 45px;
+    height: 45px;
+}
+
+.owl-next::before {
+    content: url('../images/icons/next.svg');
+    margin-left: 3px;
+    
+}
+
+.owl-prev::before {
+    content: url('../images/icons/prev.svg');
+    margin-right: 3px;
+}
+
+.owl-dots {
+    position: relative;
+    top: -20px;
+}
+
+.owl-theme .owl-dots .owl-dot span {
+    width: 20px;
+    height: 7px;
+    margin: 0 5px;
+    background: #F1F2F6;
+    display: block;
+    border-radius: 0;
+}
+
+.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
+    background: #4798DE;
+}
 /* /SLIDER */
+
+
+
+/* ACTIONS */
+
+.title_block {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+.title {
+    font-size: 35px;
+    font-weight: 700;
+    color: #15244F;
+}
+
+.title_more {
+    color: #4798DE;
+    font-weight: 700;
+}
+
+.big_title_img {
+    position: absolute;
+    left: 80px;
+    z-index: -1;
+}
+
+/* /ACTIONS */
 
 
 
